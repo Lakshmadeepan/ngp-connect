@@ -1,0 +1,417 @@
+.registration-view select {
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.registration-view .registration-card {
+  width: 390px;
+  min-height: 844px;
+  padding: 16px 16px 14px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.registration-view .graduation-banner {
+  position: relative;
+  width: 100%;
+  height: 152px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #dce9f6;
+}
+
+.registration-view .graduation-banner img {
+  position: absolute;
+  width: 447px;
+  max-width: none;
+  height: auto;
+  top: -53px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.registration-view .brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 12px;
+}
+
+.registration-view .brand-mark {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  flex: 0 0 43px;
+  border-radius: 11px;
+  color: #fff;
+  background: #1673ea;
+  box-shadow: 0 5px 13px rgb(22 115 234 / 14%);
+}
+
+.registration-view .brand-mark span {
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.registration-view .brand-mark i {
+  position: absolute;
+  right: 9px;
+  top: 16px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #96c8ff;
+}
+
+.registration-view .brand-name {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.7px;
+  color: #071d4d;
+}
+
+.registration-view .brand-name strong,
+.registration-view .brand p span {
+  color: #1273e8;
+}
+
+.registration-view .brand p {
+  margin: 3px 0 0;
+  font-size: 11px;
+  color: #71819a;
+}
+
+.registration-view .progress {
+  display: flex;
+  width: calc(100% + 16px);
+  margin: 14px -8px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.registration-view .progress li {
+  width: 33.333%;
+  text-align: center;
+  color: #8b9ab0;
+}
+
+.registration-view .step-row {
+  display: flex;
+  align-items: center;
+}
+
+.registration-view .step-line {
+  height: 2px;
+  flex: 1;
+  background: #dce6f2;
+}
+
+.registration-view .progress li:first-child .step-line:first-child,
+.registration-view .progress li:last-child .step-line:last-child {
+  background: transparent;
+}
+
+.registration-view .step-dot {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  border: 2px solid #c8d7e8;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.registration-view .step-label {
+  display: block;
+  margin-top: 4px;
+  font-size: 9px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.registration-view .progress li.active,
+.registration-view .progress li.complete {
+  color: #1072e7;
+}
+
+.registration-view .progress li.active .step-dot {
+  border-color: #1673ea;
+  color: #1673ea;
+}
+
+.registration-view .progress li.complete .step-dot {
+  border-color: #1673ea;
+  color: #fff;
+  background: #1673ea;
+}
+
+.registration-view .progress li.complete .step-line,
+.registration-view .progress li.complete + li .step-line:first-child {
+  background: #1673ea;
+}
+
+.registration-view .form-heading {
+  margin-top: 12px;
+}
+
+.registration-view .form-heading h1 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+  color: #071d4d;
+}
+
+.registration-view .form-heading p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #63738b;
+}
+
+.registration-view form {
+  margin-top: 13px;
+}
+
+.registration-view .field + .field {
+  margin-top: 9px;
+}
+
+.registration-view .field label {
+  display: block;
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #071d4d;
+}
+
+.registration-view .required {
+  margin-left: 2px;
+  color: #dd3345;
+}
+
+.registration-view .input-wrap {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #c9dcf3;
+  border-radius: 10px;
+  background: #fff;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.registration-view .input-wrap:focus-within {
+  border-color: #1976e8;
+  box-shadow: 0 0 0 3px rgb(25 118 232 / 10%);
+}
+
+.registration-view .input-wrap.invalid {
+  border-color: #dd3345;
+}
+
+.registration-view .input-wrap > svg,
+.registration-view .eye-button svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: #1474e8;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.registration-view .input-wrap svg.brand-icon {
+  fill: #1474e8;
+  stroke: none;
+}
+
+.registration-view .input-wrap svg.linkedin-icon {
+  fill: #0a66c2;
+}
+
+.registration-view .input-wrap svg .brand-cutout {
+  fill: #fff;
+}
+
+.registration-view .input-wrap svg .icon-fill {
+  fill: #1474e8;
+  stroke: none;
+}
+
+.registration-view .input-wrap input,
+.registration-view .input-wrap select {
+  min-width: 0;
+  flex: 1;
+  height: 100%;
+  padding: 0 11px;
+  border: 0;
+  outline: 0;
+  color: #071d4d;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.registration-view .input-wrap input::placeholder {
+  color: #91a0b7;
+  opacity: 1;
+}
+
+.registration-view .eye-button {
+  display: grid;
+  place-items: center;
+  padding: 5px 0 5px 8px;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+.registration-view .eye-button svg {
+  stroke: #74839b;
+}
+
+.registration-view .select-field + .select-field {
+  margin-top: 15px;
+}
+
+.registration-view .select-field .input-wrap {
+  padding-right: 13px;
+}
+
+.registration-view .input-wrap select {
+  padding-left: 0;
+  color: #91a0b7;
+  appearance: none;
+  cursor: pointer;
+}
+
+.registration-view .input-wrap select:valid {
+  color: #071d4d;
+}
+
+.registration-view .input-wrap .chevron {
+  width: 18px;
+  height: 18px;
+  stroke: #74839b;
+}
+
+.registration-view .primary-button,
+.registration-view .secondary-button {
+  height: 46px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.registration-view form > .primary-button {
+  width: 100%;
+  margin-top: 13px;
+}
+
+.registration-view .primary-button {
+  border: 0;
+  color: #fff;
+  background: #1673e8;
+  box-shadow: 0 6px 14px rgb(22 115 232 / 15%);
+}
+
+.registration-view .primary-button:active {
+  background: #0c63cf;
+}
+
+.registration-view .secondary-button {
+  border: 1px solid #bcd3ee;
+  color: #126fde;
+  background: #fff;
+}
+
+.registration-view .button-row {
+  display: grid;
+  grid-template-columns: 0.82fr 1.38fr;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.registration-view .button-row button {
+  width: 100%;
+}
+
+.registration-view .account-link {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  color: #65758d;
+}
+
+.registration-view .account-link a {
+  color: #076fe5;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 389px) {
+  .registration-view .registration-card {
+    width: 100%;
+  }
+}
+
+.success-screen {
+  text-align: center;
+  padding: 36px 12px 24px;
+}
+
+.success-icon {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 24px;
+  color: #16a34a;
+}
+
+.success-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.success-screen h1 {
+  color: #102b59;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+
+.success-description {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0 auto 18px;
+  max-width: 340px;
+}
+
+.success-tagline {
+  color: #102b59;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.success-screen .primary-button {
+  width: 100%;
+}
+

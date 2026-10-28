@@ -1,0 +1,501 @@
+.ngp-classroom-page {
+  width: 100%;
+  max-width: 760px;
+  min-width: 0;
+  margin: 0 auto;
+  color: #142748;
+}
+
+.classroom-page-heading h1 {
+  max-width: 680px;
+  margin: 0;
+  color: #142748;
+  font-size: clamp(25px, 4vw, 31px);
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1.18;
+}
+
+.classroom-page-heading > p:last-child {
+  max-width: 570px;
+  margin: 8px 0 0;
+  color: #75859d;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.classroom-connection-card {
+  width: 100%;
+  margin-top: 24px;
+  padding: 25px;
+  border: 1px solid #c9dcf3;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 100% 0, rgb(218 233 255 / 68%), transparent 35%),
+    #fff;
+  box-shadow: 0 9px 27px rgb(31 58 96 / 7%);
+}
+
+.classroom-card-heading {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.classroom-logo-tile {
+  display: grid;
+  width: 59px;
+  height: 59px;
+  flex: 0 0 59px;
+  place-items: center;
+  border: 1px solid #e3ebf5;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 13px rgb(31 58 96 / 6%);
+}
+
+.classroom-google-logo {
+  display: block;
+  width: 41px;
+  height: 41px;
+}
+
+.classroom-kicker {
+  margin: 0 0 5px;
+  color: #3478cf;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.15px;
+}
+
+.classroom-connection-card h2 {
+  margin: 0;
+  color: #152b4e;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.35px;
+  line-height: 1.35;
+}
+
+.classroom-connect-form {
+  display: grid;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.classroom-connect-form label {
+  color: #203553;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.classroom-connect-form input {
+  width: 100%;
+  min-width: 0;
+  height: 45px;
+  padding: 0 13px;
+  border: 1px solid #cfdaea;
+  border-radius: 9px;
+  outline: none;
+  color: #192d4c;
+  background: #fff;
+  font: inherit;
+  font-size: 13px;
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.classroom-connect-form input::placeholder {
+  color: #9aa7b8;
+}
+
+.classroom-connect-form input:focus {
+  border-color: #347edc;
+  box-shadow: 0 0 0 3px rgb(52 126 220 / 13%);
+}
+
+.classroom-continue-button {
+  display: inline-flex;
+  width: 100%;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 4px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 9px;
+  color: #fff;
+  background: #216fdd;
+  box-shadow: 0 6px 15px rgb(33 111 221 / 18%);
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  transition:
+    background-color 150ms ease,
+    transform 150ms ease;
+}
+
+.classroom-continue-button:hover {
+  transform: translateY(-1px);
+  background: #155fc8;
+}
+
+.classroom-continue-button:focus-visible,
+.classroom-disconnect-button:focus-visible {
+  outline: 3px solid rgb(33 111 221 / 34%);
+  outline-offset: 3px;
+}
+
+.classroom-helper {
+  margin: 1px 0 0;
+  color: #7c8ba1;
+  font-size: 10px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.classroom-feedback {
+  min-height: 0;
+  margin: 0;
+  color: #8a5713;
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.classroom-feedback:empty {
+  display: none;
+}
+
+.classroom-state-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 16px 0 0;
+  padding: 12px;
+  border: 1px solid #dce8f7;
+  border-radius: 10px;
+  color: #365e8b;
+  background: #f3f8ff;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.classroom-state-message > svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+
+.classroom-state-message.is-error {
+  border-color: #f0d8d5;
+  color: #923d37;
+  background: #fff8f7;
+}
+
+.classroom-spinner {
+  animation: classroom-spin 900ms linear infinite;
+}
+
+@keyframes classroom-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.classroom-connected-tools {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+.classroom-course-list {
+  display: grid;
+  gap: 9px;
+  margin-top: 18px;
+}
+
+.classroom-course-count {
+  margin: 0 0 2px;
+  color: #71819a;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.classroom-course-card {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  border: 1px solid #e6edf6;
+  border-radius: 11px;
+  background: #fff;
+}
+
+.classroom-course-symbol {
+  display: grid;
+  width: 39px;
+  height: 39px;
+  flex: 0 0 39px;
+  place-items: center;
+  border-radius: 11px;
+  color: #236dce;
+  background: #edf4ff;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.classroom-course-copy {
+  min-width: 0;
+  flex: 1;
+}
+
+.classroom-course-copy h3 {
+  margin: 0;
+  color: #203553;
+  font-size: 12px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.classroom-course-copy p {
+  margin: 4px 0 0;
+  color: #7c8ba1;
+  font-size: 10px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.classroom-course-copy .classroom-course-room {
+  color: #5f718b;
+}
+
+.classroom-course-copy .classroom-course-description {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.classroom-course-link {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  place-items: center;
+  border-radius: 8px;
+  color: #2672d2;
+  background: #edf4ff;
+}
+
+.classroom-course-link:hover {
+  color: #155fc8;
+  background: #e2efff;
+}
+
+.classroom-retry-button {
+  display: inline-flex;
+  min-height: 30px;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  padding: 0 9px;
+  border: 1px solid #efcfcb;
+  border-radius: 7px;
+  color: #923d37;
+  background: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.classroom-disconnect-button {
+  display: inline-flex;
+  min-height: 37px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 11px;
+  border: 1px solid #dce4ef;
+  border-radius: 8px;
+  color: #526580;
+  background: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.classroom-disconnect-button:hover {
+  border-color: #efcaca;
+  color: #a73535;
+  background: #fff8f8;
+}
+
+.classroom-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin-top: 17px;
+  padding: 14px 15px;
+  border: 1px solid #dce8f7;
+  border-radius: 12px;
+  color: #3771b8;
+  background: #edf4fc;
+}
+
+.classroom-note > svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+
+.classroom-note > div {
+  min-width: 0;
+}
+
+.classroom-note strong {
+  display: block;
+  color: #244d7d;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.classroom-note p {
+  margin: 4px 0 0;
+  color: #67809e;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+@media (max-width: 600px) {
+  .ngp-classroom-page {
+    width: 100%;
+    max-width: 100%;
+    padding: 1px 0;
+  }
+
+  .classroom-page-heading h1 {
+    font-size: clamp(23px, 6.1vw, 26px);
+    letter-spacing: -0.6px;
+  }
+
+  .classroom-page-heading > p:last-child {
+    margin-top: 6px;
+    font-size: 11px;
+  }
+
+  .classroom-connection-card {
+    margin-top: 17px;
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .classroom-card-heading {
+    gap: 12px;
+    padding-bottom: 16px;
+  }
+
+  .classroom-logo-tile {
+    width: 49px;
+    height: 49px;
+    flex-basis: 49px;
+    border-radius: 12px;
+  }
+
+  .classroom-google-logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .classroom-kicker {
+    font-size: 8px;
+  }
+
+  .classroom-connection-card h2 {
+    font-size: 15px;
+  }
+
+  .classroom-connect-form {
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .classroom-connect-form label {
+    font-size: 11px;
+  }
+
+  .classroom-connect-form input {
+    height: 43px;
+    font-size: 12px;
+  }
+
+  .classroom-continue-button {
+    min-height: 44px;
+    font-size: 11px;
+  }
+
+  .classroom-helper {
+    font-size: 9px;
+  }
+
+  .classroom-feedback {
+    font-size: 10px;
+  }
+
+  .classroom-connected-tools {
+    justify-content: stretch;
+  }
+
+  .classroom-disconnect-button {
+    width: 100%;
+  }
+
+  .classroom-state-message {
+    gap: 7px;
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .classroom-course-card {
+    gap: 9px;
+    padding: 10px;
+  }
+
+  .classroom-course-symbol {
+    width: 35px;
+    height: 35px;
+    flex-basis: 35px;
+  }
+
+  .classroom-course-copy h3 {
+    font-size: 11px;
+  }
+
+  .classroom-course-copy p {
+    font-size: 9px;
+  }
+
+  .classroom-note {
+    gap: 9px;
+    margin-top: 14px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .classroom-note strong {
+    font-size: 10px;
+  }
+
+  .classroom-note p {
+    font-size: 9px;
+  }
+}

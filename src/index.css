@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --ngp-bg: #f4f7fb;
+  --ngp-surface: #fff;
+  --ngp-surface-soft: #f5f8fc;
+  --ngp-strong-text: #10264c;
+  --ngp-muted-text: #78879c;
+  --ngp-border: #e8eef6;
+  --ngp-divider: #eef2f7;
+  --ngp-primary: #2478ed;
+  --ngp-primary-soft: #edf4ff;
+  --ngp-primary-strong: #124fa8;
+  --ngp-toggle-off: #cbd5e1;
+  --ngp-shadow-soft: 0 4px 13px rgb(31 58 96 / 4%);
+  --ngp-shadow-hover: 0 8px 20px rgb(31 58 96 / 8%);
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  color: #071d4d;
+  background: var(--ngp-bg);
+  font-synthesis: none;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ngp-bg: #071827;
+  --ngp-surface: #0d1d30;
+  --ngp-surface-soft: #111f34;
+  --ngp-strong-text: #edf5ff;
+  --ngp-muted-text: #9bb0ca;
+  --ngp-border: #20324d;
+  --ngp-divider: #1b2d45;
+  --ngp-primary: #4c97ff;
+  --ngp-primary-soft: rgba(76, 151, 255, 0.14);
+  --ngp-primary-strong: #91c0ff;
+  --ngp-toggle-off: #394d6d;
+  --ngp-shadow-soft: 0 10px 24px rgb(2 10 20 / 25%);
+  --ngp-shadow-hover: 0 12px 30px rgb(2 10 20 / 30%);
+  background: var(--ngp-bg);
+  color: var(--ngp-strong-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--ngp-bg);
+  color: var(--ngp-strong-text);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #f4f7fb;
+}
+
+.login-card {
+  width: 390px;
+  min-height: 844px;
+  padding: 20px 16px 18px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.graduation-banner {
+  position: relative;
+  width: 100%;
+  height: 174px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #dce9f6;
+}
+
+.graduation-banner img {
+  position: absolute;
+  width: 447px;
+  max-width: none;
+  height: auto;
+  top: -53px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.brand-mark {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 47px;
+  height: 47px;
+  flex: 0 0 47px;
+  border-radius: 12px;
+  color: white;
+  background: #1673ea;
+  box-shadow: 0 5px 13px rgb(22 115 234 / 14%);
+}
+
+.brand-mark span {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.brand-mark i {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #96c8ff;
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.7px;
+  color: #071d4d;
+}
+
+.brand-name strong {
+  color: #1273e8;
+}
+
+.brand p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #71819a;
+}
+
+.brand p span {
+  color: #0670e9;
+}
+
+.intro {
+  margin-top: 17px;
+}
+
+.eyebrow {
+  margin: 0 0 7px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: #0b70e6;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.1px;
+  color: #071d4d;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #52627c;
+}
+
+form {
+  margin-top: 16px;
+}
+
+form > label {
+  display: block;
+  margin: 0 0 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #071d4d;
+}
+
+form > label:not(:first-child) {
+  margin-top: 11px;
+}
+
+.input-wrap {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 13px;
+  border: 1px solid #c9dcf3;
+  border-radius: 10px;
+  background: #fff;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.input-wrap:focus-within {
+  border-color: #1976e8;
+  box-shadow: 0 0 0 3px rgb(25 118 232 / 10%);
+}
+
+.input-wrap > svg,
+.eye-button svg {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: #1474e8;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.input-wrap input {
+  min-width: 0;
+  flex: 1;
+  height: 100%;
+  padding: 0 12px;
+  border: 0;
+  outline: 0;
+  color: #071d4d;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.input-wrap input::placeholder {
+  color: #91a0b7;
+  opacity: 1;
+}
+
+.eye-button {
+  display: grid;
+  place-items: center;
+  padding: 5px 0 5px 8px;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+.eye-button svg {
+  stroke: #74839b;
+}
+
+.form-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 7px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #708099;
+}
+
+.form-meta span {
+  white-space: nowrap;
+}
+
+.form-meta a,
+.signup a {
+  flex: 0 0 auto;
+  color: #076fe5;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.primary-button,
+.google-button {
+  width: 100%;
+  height: 48px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.primary-button {
+  margin-top: 14px;
+  border: 0;
+  color: #fff;
+  background: #1673e8;
+  box-shadow: 0 6px 14px rgb(22 115 232 / 15%);
+}
+
+.primary-button:active {
+  background: #0c63cf;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 12px 0;
+  color: #64738a;
+  font-size: 11px;
+}
+
+.divider span {
+  height: 1px;
+  flex: 1;
+  background: #d3e0ef;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #c9dcf3;
+  color: #071d4d;
+  background: #fff;
+}
+
+.google-button svg {
+  width: 21px;
+  height: 21px;
+}
+
+.signup {
+  margin: 17px 0 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #65758d;
+}
+
+@media (max-width: 600px) {
+  .page {
+    position: relative;
+    min-height: calc(100vh + 22px + env(safe-area-inset-top));
+    align-items: flex-start;
+    padding-top: calc(22px + env(safe-area-inset-top));
+  }
+}
+
+@media (max-width: 389px) {
+  .login-card {
+    width: 100%;
+  }
+}

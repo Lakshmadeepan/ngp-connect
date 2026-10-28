@@ -1,0 +1,597 @@
+.college-ai-page {
+  --college-ai-navy: #10264c;
+  --college-ai-blue: #216fdd;
+  --college-ai-ink: #243955;
+  --college-ai-muted: #77879d;
+  width: 100%;
+  max-width: 1260px;
+  min-width: 0;
+  margin: 0 auto;
+  color: var(--college-ai-ink);
+}
+
+.college-ai-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.college-ai-heading h1 {
+  margin: 0;
+  color: var(--college-ai-navy);
+  font-size: clamp(24px, 3vw, 31px);
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+}
+
+.college-ai-heading > div > p:last-child {
+  margin: 6px 0 0;
+  color: #75859d;
+  font-size: 13px;
+}
+
+.college-ai-clear-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid #dce5f0;
+  color: #536984;
+  background: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  transition:
+    color 150ms ease,
+    border-color 150ms ease,
+    background-color 150ms ease;
+}
+
+.college-ai-clear-icon:hover:not(:disabled) {
+  border-color: #c4d8f1;
+  color: #216fdd;
+  background: #f5f9ff;
+}
+
+.college-ai-clear-icon:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+.college-ai-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+
+.college-ai-welcome-card,
+.college-ai-chat-card {
+  min-width: 0;
+  border: 1px solid #e4eaf2;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 6px 22px rgb(24 54 93 / 5%);
+}
+
+.college-ai-welcome-card {
+  position: relative;
+  display: flex;
+  min-height: 172px;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 24px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 50%, rgb(77 143 235 / 13%), transparent 25%),
+    linear-gradient(155deg, #fff 0%, #f6f9ff 100%);
+}
+
+.college-ai-mascot {
+  position: relative;
+  display: grid;
+  width: 150px;
+  height: 145px;
+  flex: 0 0 auto;
+  place-items: center;
+  margin: 0;
+}
+
+.college-ai-mascot-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 154px;
+  height: 132px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgb(82 153 245 / 21%), rgb(209 230 255 / 8%) 62%, transparent 72%);
+}
+
+.college-ai-robot {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  padding-top: 14px;
+  filter: drop-shadow(0 8px 9px rgb(26 83 151 / 14%));
+}
+
+.college-ai-robot-antenna {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 19px;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  background: #327ddd;
+}
+
+.college-ai-robot-antenna::before {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translateX(-50%);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #327ddd;
+  box-shadow: 0 0 0 2px #327ddd;
+  content: "";
+}
+
+.college-ai-robot-face {
+  position: relative;
+  display: flex;
+  width: 122px;
+  height: 89px;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  border: 5px solid #dcecff;
+  border-radius: 34px;
+  background: linear-gradient(145deg, #fff, #eff6ff);
+  box-shadow: inset 0 0 0 2px #fff, 0 0 0 1px #97bff1;
+}
+
+.college-ai-robot-eye {
+  width: 10px;
+  height: 13px;
+  border-radius: 50%;
+  background: #1d65bd;
+}
+
+.college-ai-robot-smile {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  width: 19px;
+  height: 8px;
+  transform: translateX(-50%);
+  border-bottom: 2px solid #5b91d1;
+  border-radius: 0 0 14px 14px;
+}
+
+.college-ai-robot-ear {
+  position: absolute;
+  z-index: -1;
+  top: 47px;
+  width: 11px;
+  height: 29px;
+  border: 2px solid #7eabe4;
+  border-radius: 8px;
+  background: #ddebff;
+}
+
+.college-ai-robot-ear-left {
+  left: -7px;
+}
+
+.college-ai-robot-ear-right {
+  right: -7px;
+}
+
+.college-ai-robot-neck {
+  width: 26px;
+  height: 10px;
+  background: #8fb8ec;
+}
+
+.college-ai-robot-body {
+  display: grid;
+  width: 76px;
+  height: 52px;
+  place-items: center;
+  border: 4px solid #dcecff;
+  border-radius: 19px 19px 13px 13px;
+  color: #347dd6;
+  background: linear-gradient(145deg, #fff, #eaf3ff);
+  box-shadow: 0 0 0 1px #97bff1;
+}
+
+.college-ai-mascot-sparkle {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+  background: #78a9e7;
+  transform: rotate(45deg);
+}
+
+.college-ai-mascot-sparkle-one {
+  top: 31px;
+  right: 14px;
+}
+
+.college-ai-mascot-sparkle-two {
+  bottom: 26px;
+  left: 14px;
+  width: 6px;
+  height: 6px;
+  background: #b2d1f6;
+}
+
+.college-ai-welcome-label {
+  margin: 0 0 9px;
+  color: #3477c8;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+}
+
+.college-ai-welcome-copy {
+  min-width: 0;
+  max-width: 700px;
+}
+
+.college-ai-welcome-card h2 {
+  margin: 0;
+  color: #152d50;
+  font-size: clamp(19px, 2vw, 24px);
+  font-weight: 800;
+  letter-spacing: -0.45px;
+  line-height: 1.35;
+}
+
+.college-ai-welcome-description {
+  margin: 9px 0 0;
+  color: #75859d;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.college-ai-chat-card {
+  display: flex;
+  min-height: min(650px, calc(100vh - 370px));
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.college-ai-chat-top {
+  display: flex;
+  min-height: 66px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 17px;
+  border-bottom: 1px solid #edf1f6;
+}
+
+.college-ai-chat-title {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 10px;
+}
+
+.college-ai-chat-icon,
+.college-ai-message-avatar {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  color: #276fc7;
+  background: #eaf3ff;
+}
+
+.college-ai-chat-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 11px;
+}
+
+.college-ai-chat-title h2 {
+  margin: 0;
+  color: #213957;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.college-ai-chat-title p {
+  margin: 4px 0 0;
+  color: #8895a7;
+  font-size: 9px;
+}
+
+.college-ai-clear-icon {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  border-color: transparent;
+  border-radius: 8px;
+  color: #8a97a8;
+  background: transparent;
+}
+
+.college-ai-messages {
+  display: flex;
+  min-height: 165px;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 14px;
+  padding: 17px;
+  overflow-y: auto;
+  background:
+    radial-gradient(circle at 96% 4%, rgb(227 239 255 / 50%), transparent 30%),
+    #fbfcfe;
+}
+
+.college-ai-message {
+  display: flex;
+  max-width: 92%;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.college-ai-message-user {
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+.college-ai-message-avatar {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+}
+
+.college-ai-message-content {
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #e4eaf2;
+  border-radius: 4px 13px 13px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgb(24 54 93 / 3%);
+}
+
+.college-ai-message-user .college-ai-message-content {
+  border-color: #216fdd;
+  border-radius: 13px 4px 13px 13px;
+  color: #fff;
+  background: #216fdd;
+}
+
+.college-ai-message-content > p {
+  margin: 0;
+  color: #425872;
+  font-size: 10px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.college-ai-message-user .college-ai-message-content > p {
+  color: #fff;
+}
+
+.college-ai-composer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 15px 7px;
+  border-top: 1px solid #edf1f6;
+  background: #fff;
+}
+
+.college-ai-composer input {
+  width: 100%;
+  min-width: 0;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid #dce5f0;
+  border-radius: 10px;
+  outline: 0;
+  color: #243955;
+  background: #fbfcfe;
+  font: inherit;
+  font-size: 10px;
+}
+
+.college-ai-composer input::placeholder {
+  color: #98a4b4;
+}
+
+.college-ai-composer input:focus {
+  border-color: #4b8cda;
+  box-shadow: 0 0 0 3px rgb(52 126 220 / 12%);
+}
+
+.college-ai-composer button {
+  display: inline-flex;
+  min-height: 40px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 9px;
+  color: #fff;
+  background: #216fdd;
+  cursor: pointer;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.college-ai-composer button:hover:not(:disabled) {
+  background: #155fc8;
+}
+
+.college-ai-composer button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.college-ai-disclaimer {
+  margin: 0;
+  padding: 0 15px 11px;
+  color: #8a97a8;
+  background: #fff;
+  font-size: 8px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.college-ai-page button:focus-visible {
+  outline: 3px solid rgb(33 111 221 / 28%);
+  outline-offset: 2px;
+}
+
+@media (max-width: 700px) {
+  .college-ai-heading {
+    align-items: flex-start;
+    margin-bottom: 13px;
+  }
+
+  .college-ai-heading h1 {
+    font-size: 23px;
+  }
+
+  .college-ai-heading > div > p:last-child {
+    font-size: 11px;
+    line-height: 1.45;
+  }
+
+  .college-ai-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .college-ai-welcome-card {
+    display: flex;
+    min-height: 0;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 11px;
+    border-radius: 12px;
+  }
+
+  .college-ai-mascot {
+    position: relative;
+    display: grid;
+    width: 76px;
+    height: 90px;
+    align-self: center;
+    place-items: center;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .college-ai-robot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.47);
+    transform-origin: center;
+  }
+
+  .college-ai-mascot-glow {
+    top: 50%;
+    left: 50%;
+    width: 78px;
+    height: 76px;
+    transform: translate(-50%, -50%);
+  }
+
+  .college-ai-mascot-sparkle-one {
+    top: 17px;
+    right: 2px;
+  }
+
+  .college-ai-mascot-sparkle-two {
+    bottom: 12px;
+    left: 2px;
+  }
+
+  .college-ai-welcome-copy {
+    flex: 1 1 auto;
+  }
+
+  .college-ai-welcome-label {
+    margin: 0 0 4px;
+    font-size: 7px;
+    letter-spacing: 0.55px;
+  }
+
+  .college-ai-welcome-card h2 {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .college-ai-welcome-description {
+    margin-top: 3px;
+    font-size: 9px;
+  }
+
+  .college-ai-chat-card {
+    min-height: max(480px, calc(100vh - 300px));
+    border-radius: 12px;
+  }
+
+  .college-ai-chat-top {
+    min-height: 55px;
+    padding: 8px 11px;
+  }
+
+  .college-ai-messages {
+    min-height: 125px;
+    padding: 12px 10px;
+  }
+
+  .college-ai-message {
+    max-width: 96%;
+  }
+
+  .college-ai-message-content {
+    padding: 9px 10px;
+  }
+
+  .college-ai-message-content > p {
+    font-size: 9px;
+  }
+
+  .college-ai-composer {
+    padding: 9px 9px 6px;
+  }
+
+  .college-ai-composer input {
+    min-height: 38px;
+    padding: 0 9px;
+    font-size: 9px;
+  }
+
+  .college-ai-composer button {
+    min-height: 38px;
+    gap: 5px;
+    padding: 0 9px;
+    font-size: 9px;
+  }
+
+  .college-ai-disclaimer {
+    padding: 0 10px 9px;
+    font-size: 7px;
+  }
+}
