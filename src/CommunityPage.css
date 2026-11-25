@@ -20,7 +20,7 @@
 .community-header h1 {
   margin: 0;
   color: var(--community-navy);
-  font-size: clamp(25px, 3vw, 30px);
+  font-size: clamp(29px, 3vw, 34px);
   font-weight: 800;
   letter-spacing: -0.75px;
   line-height: 1.2;
@@ -29,7 +29,7 @@
 .community-header > div > p:last-child {
   margin: 6px 0 0;
   color: #75859d;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -60,7 +60,7 @@
   color: #fff;
   background: var(--community-blue);
   box-shadow: 0 5px 13px rgb(33 111 221 / 15%);
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .community-create-button:hover,
@@ -79,7 +79,7 @@
   border-radius: 9px;
   color: #55708f;
   background: #eef5fd;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -158,14 +158,14 @@
 
 .community-quick-copy strong {
   color: #203553;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 800;
   line-height: 1.3;
 }
 
 .community-quick-copy > span {
   color: #8492a6;
-  font-size: 8px;
+  font-size: 12px;
   line-height: 1.35;
 }
 
@@ -223,7 +223,7 @@
   color: #30445f;
   background: transparent;
   font: inherit;
-  font-size: 9px;
+  font-size: 13px;
 }
 
 .community-search-box input::placeholder {
@@ -265,13 +265,13 @@
 .community-feed-heading h2 {
   margin: 0;
   color: #1a2c49;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 800;
 }
 
 .community-feed-heading > span {
   color: #93a0b1;
-  font-size: 9px;
+  font-size: 13px;
 }
 
 .community-sort {
@@ -285,7 +285,7 @@
 .community-sort select {
   width: auto;
   color: #586b85;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -307,7 +307,7 @@
   background: #fff;
   cursor: pointer;
   font: inherit;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 650;
   white-space: nowrap;
 }
@@ -361,7 +361,7 @@
   border-radius: 50%;
   color: #2467ba;
   background: #edf4ff;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 800;
 }
 
@@ -386,7 +386,7 @@
 .community-author-copy strong {
   overflow: hidden;
   color: #243754;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 800;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -394,7 +394,7 @@
 
 .community-author-copy > span {
   color: #8a98aa;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .community-category {
@@ -408,7 +408,7 @@
   border-radius: 14px;
   color: #2e68aa;
   background: #edf4ff;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 750;
 }
 
@@ -450,7 +450,7 @@
   min-width: 0;
   margin: 0;
   color: #1b304e;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 800;
   line-height: 1.4;
   overflow-wrap: anywhere;
@@ -466,7 +466,7 @@
   border-radius: 11px;
   color: #347555;
   background: #eaf7ef;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 750;
 }
 
@@ -490,7 +490,7 @@
 .community-post-description {
   margin: 7px 0 0;
   color: #65768e;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.6;
   overflow-wrap: anywhere;
 }
@@ -511,7 +511,7 @@
   background: #f7f9fc;
   cursor: pointer;
   font: inherit;
-  font-size: 8px;
+  font-size: 12px;
   line-height: 1;
 }
 
@@ -530,7 +530,7 @@
   border-radius: 9px;
   color: #5d718a;
   background: #f8fafd;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.55;
 }
 
@@ -574,7 +574,7 @@
   background: #f7faff;
   cursor: pointer;
   font: inherit;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -627,7 +627,7 @@
 .community-comments-heading h4 {
   margin: 0;
   color: #263b5a;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 800;
 }
 
@@ -635,7 +635,7 @@
 .community-comments-heading > p {
   margin: 0;
   color: #8794a6;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .community-comment-list {
@@ -663,7 +663,7 @@
   border-radius: 50%;
   color: #286bbd;
   background: #eaf2ff;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 800;
 }
 
@@ -673,13 +673,13 @@
 
 .community-comment strong {
   color: #344a68;
-  font-size: 9px;
+  font-size: 13px;
 }
 
 .community-comment p {
   margin: 3px 0 0;
   color: #62748c;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.5;
   overflow-wrap: anywhere;
   white-space: pre-wrap;
@@ -688,7 +688,7 @@
 .community-no-comments {
   margin: 0;
   color: #7c8ba0;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -709,7 +709,7 @@
   color: #243955;
   background: #fff;
   font: inherit;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.5;
   resize: vertical;
 }
@@ -732,7 +732,7 @@
   background: #216fdd;
   cursor: pointer;
   font: inherit;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -746,7 +746,7 @@
   min-height: 30px;
   padding: 0 9px;
   border-radius: 7px;
-  font-size: 9px;
+  font-size: 13px;
   white-space: nowrap;
 }
 
@@ -774,7 +774,7 @@
 .community-local-only {
   margin-left: auto;
   color: #9aa6b6;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .community-empty {
@@ -791,12 +791,12 @@
 .community-empty h3 {
   margin: 9px 0 0;
   color: #263a58;
-  font-size: 13px;
+  font-size: 17px;
 }
 
 .community-empty p {
   margin: 5px 0 11px;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .community-empty button,
@@ -809,7 +809,7 @@
   background: transparent;
   cursor: pointer;
   font: inherit;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 750;
 }
 
@@ -831,7 +831,7 @@
 .community-side-title h2 {
   margin: 0;
   color: #233754;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -851,21 +851,21 @@
 
 .community-side-card li > span {
   color: #4982c8;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 800;
 }
 
 .community-side-card li p {
   margin: 0;
   color: #687991;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
 .community-guideline-card > p {
   margin: 9px 0 11px;
   color: #6c7d94;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.6;
 }
 
@@ -876,7 +876,7 @@
   margin: 0;
   padding: 0 2px;
   color: #8b98a9;
-  font-size: 8px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
@@ -916,20 +916,20 @@
 
 .community-modal-header .ngp-eyebrow {
   margin-bottom: 4px;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .community-modal-header h2 {
   margin: 0;
   color: #14294b;
-  font-size: 19px;
+  font-size: 23px;
   font-weight: 800;
 }
 
 .community-modal-header > div > p:last-child {
   margin: 5px 0 0;
   color: #77879e;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -960,7 +960,7 @@
 }
 
 .community-form-field > span {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 750;
 }
 
@@ -981,7 +981,7 @@
   color: #243955;
   background: #fff;
   font: inherit;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .community-form-field select {
@@ -1003,7 +1003,7 @@
 
 .community-form-field small {
   color: #8794a6;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .community-form-row {
@@ -1027,20 +1027,20 @@
   gap: 6px;
   margin: 0;
   color: #315f97;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 800;
 }
 
 .community-form-feedback {
   margin: 0;
   color: #a03f35;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .community-form-notice {
   margin: 0;
   color: #8390a2;
-  font-size: 8px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
@@ -1056,7 +1056,7 @@
   min-height: 36px;
   padding: 0 13px;
   border-radius: 8px;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .community-cancel-button {
@@ -1135,14 +1135,14 @@
   }
 
   .community-header h1 {
-    font-size: 22px;
+    font-size: 26px;
     letter-spacing: -0.5px;
   }
 
   .community-header > div > p:last-child {
     max-width: 230px;
     margin-top: 4px;
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .community-create-button {
@@ -1150,7 +1150,7 @@
     gap: 5px;
     padding: 0 9px;
     border-radius: 8px;
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .community-create-button svg {
@@ -1162,7 +1162,7 @@
     gap: 6px;
     margin-top: 10px;
     padding: 8px;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .community-quick-actions {
@@ -1191,11 +1191,11 @@
   }
 
   .community-quick-copy strong {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .community-quick-copy > span {
-    font-size: 7px;
+    font-size: 11px;
   }
 
   .community-quick-arrow {
@@ -1224,7 +1224,7 @@
   }
 
   .community-search-box input {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .community-select-wrap {
@@ -1233,11 +1233,11 @@
   }
 
   .community-select-wrap select {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .community-feed-heading h2 {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .community-filters {
@@ -1248,7 +1248,7 @@
   .community-filters button {
     min-height: 27px;
     padding: 0 9px;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .community-post-list {
@@ -1271,11 +1271,11 @@
   }
 
   .community-author-copy strong {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .community-author-copy > span {
-    font-size: 7px;
+    font-size: 11px;
   }
 
   .community-category {
@@ -1283,7 +1283,7 @@
     min-height: 21px;
     gap: 4px;
     padding: 0 6px;
-    font-size: 7px;
+    font-size: 11px;
     white-space: normal;
     line-height: 1.2;
   }
@@ -1302,19 +1302,19 @@
   }
 
   .community-post-title-row h3 {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .community-status {
     min-height: 19px;
     gap: 4px;
     padding: 0 6px;
-    font-size: 7px;
+    font-size: 11px;
   }
 
   .community-post-description {
     margin-top: 6px;
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .community-tags {
@@ -1325,7 +1325,7 @@
   .community-tags button {
     min-height: 20px;
     padding: 0 6px;
-    font-size: 7px;
+    font-size: 11px;
   }
 
   .community-post-actions {
@@ -1339,7 +1339,7 @@
     min-height: 29px;
     gap: 5px;
     padding: 0 7px;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .community-action-primary svg,
@@ -1381,7 +1381,7 @@
   }
 
   .community-modal-header h2 {
-    font-size: 17px;
+    font-size: 21px;
   }
 
   .community-post-form {
@@ -1392,7 +1392,7 @@
   .community-form-field input,
   .community-form-field select,
   .community-form-field textarea {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .community-form-row {
@@ -1407,7 +1407,7 @@
   }
 
   .community-quick-copy strong {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .community-post {
@@ -1416,6 +1416,6 @@
 
   .community-action-primary,
   .community-action-secondary {
-    font-size: 7px;
+    font-size: 11px;
   }
 }

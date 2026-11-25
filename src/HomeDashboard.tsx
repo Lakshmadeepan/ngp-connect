@@ -68,6 +68,7 @@ const defaultProfile: ProfileDetails = {
 }
 
 const profileStorageKey = "ngp-profile-details"
+const themeStorageKey = "ngp-theme-preference"
 
 function getProfileFromStorage(): ProfileDetails {
   if (typeof window === "undefined") {
@@ -200,12 +201,12 @@ export default function HomeDashboard({ onLogout }: HomeDashboardProps) {
       return "light"
     }
 
-    const storedTheme = localStorage.getItem("ngp-theme")
+    const storedTheme = localStorage.getItem(themeStorageKey)
     if (storedTheme === "light" || storedTheme === "dark") {
       return storedTheme
     }
 
-    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+    return "light"
   })
 
   const [notifications, setNotifications] =
@@ -213,8 +214,12 @@ export default function HomeDashboard({ onLogout }: HomeDashboardProps) {
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme
-    localStorage.setItem("ngp-theme", theme)
   }, [theme])
+
+  const handleThemeChange = (nextTheme: "light" | "dark") => {
+    localStorage.setItem(themeStorageKey, nextTheme)
+    setTheme(nextTheme)
+  }
 
   useEffect(() => {
     setProfileDraft(profile)
@@ -551,7 +556,7 @@ export default function HomeDashboard({ onLogout }: HomeDashboardProps) {
                 onLogout={onLogout}
                 onNavigate={navigate}
                 theme={theme}
-                onThemeChange={setTheme}
+                onThemeChange={handleThemeChange}
               />
             ) : activePage === "profile" ? (
               <section className="ngp-profile-page">

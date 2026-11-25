@@ -10,14 +10,14 @@
 .settings-page-heading h1 {
   margin: 0;
   color: var(--ngp-strong-text);
-  font-size: clamp(24px, 2.5vw, 30px);
+  font-size: clamp(28px, 2.5vw, 34px);
   letter-spacing: -0.8px;
 }
 
 .settings-page-heading > p:last-child {
   margin: 7px 0 0;
   color: var(--ngp-muted-text);
-  font-size: 13px;
+  font-size: 17px;
   line-height: 1.55;
 }
 
@@ -78,13 +78,13 @@
 }
 
 .settings-option-copy strong {
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 800;
 }
 
 .settings-option-copy span {
   color: var(--ngp-muted-text);
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.45;
 }
 
@@ -109,7 +109,7 @@
   color: var(--ngp-strong-text);
   cursor: pointer;
   font: inherit;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -127,14 +127,14 @@
 .settings-detail-header h2 {
   margin: 0;
   color: var(--ngp-strong-text);
-  font-size: clamp(24px, 2vw, 30px);
+  font-size: clamp(28px, 2vw, 34px);
   letter-spacing: -0.8px;
 }
 
 .settings-detail-header > p:last-child {
   margin: 10px 0 0;
   color: var(--ngp-muted-text);
-  font-size: 13px;
+  font-size: 17px;
   line-height: 1.6;
 }
 
@@ -159,7 +159,7 @@
   gap: 12px;
   padding: 15px 18px;
   border-bottom: 1px solid var(--ngp-divider);
-  font-size: 13px;
+  font-size: 17px;
 }
 
 .settings-detail-list > div:last-child {
@@ -183,7 +183,7 @@
   border-radius: 10px;
   color: var(--ngp-muted-text);
   background: var(--ngp-surface-soft);
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -222,13 +222,13 @@
 
 .settings-preference-label {
   color: var(--ngp-strong-text);
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
 }
 
 .settings-preference-description {
   color: var(--ngp-muted-text);
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.45;
 }
 
@@ -296,13 +296,13 @@
 
 .settings-info-block strong {
   color: var(--ngp-strong-text);
-  font-size: 13px;
+  font-size: 17px;
 }
 
 .settings-info-block p {
   margin: 5px 0 0;
   color: var(--ngp-muted-text);
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -317,7 +317,7 @@
   background: transparent;
   cursor: pointer;
   font: inherit;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -372,12 +372,12 @@
 }
 
 .theme-option-copy strong {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .theme-option-copy span {
   color: var(--ngp-muted-text);
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.45;
 }
 
@@ -400,20 +400,20 @@
   border-radius: 14px;
   background: linear-gradient(135deg, #165ee4 0%, #2c84ff 100%);
   color: #fff;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
 }
 
 .about-app-card h3 {
   margin: 0;
   color: var(--ngp-strong-text);
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .about-app-card p {
   margin: 6px 0 0;
   color: var(--ngp-muted-text);
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -446,14 +446,14 @@
 .settings-signout h2 {
   margin: 0;
   color: var(--ngp-strong-text);
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 800;
 }
 
 .settings-signout p {
   margin: 6px 0 0;
   color: var(--ngp-muted-text);
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -471,7 +471,7 @@
   background: var(--ngp-surface);
   cursor: pointer;
   font: inherit;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -506,11 +506,11 @@
   }
 
   .settings-option-copy strong {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .settings-option-copy span {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .settings-signout {

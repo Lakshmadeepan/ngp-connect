@@ -27,7 +27,7 @@
 .notifications-heading h1 {
   margin: 0;
   color: var(--notifications-navy);
-  font-size: clamp(24px, 3vw, 31px);
+  font-size: clamp(28px, 3vw, 35px);
   font-weight: 800;
   letter-spacing: -0.8px;
 }
@@ -35,7 +35,7 @@
 .notifications-heading > div > p:last-child {
   margin: 6px 0 0;
   color: #75859d;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .notifications-mark-all {
@@ -52,7 +52,7 @@
   background: #fff;
   cursor: pointer;
   font: inherit;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 750;
 }
 
@@ -73,7 +73,7 @@
   border-radius: 9px;
   color: #58718f;
   background: #eff6ff;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.55;
 }
 
@@ -102,13 +102,13 @@
 .notifications-panel-heading h2 {
   margin: 0;
   color: #223955;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 800;
 }
 
 .notifications-panel-heading span {
   color: #8a97a9;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .notifications-filters {
@@ -134,7 +134,7 @@
   background: #fff;
   cursor: pointer;
   font: inherit;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -154,7 +154,7 @@
   border-radius: 9px;
   color: #fff;
   background: #3478d2;
-  font-size: 7px;
+  font-size: 11px;
 }
 
 .notification-list {
@@ -247,7 +247,7 @@
 .notification-item-topline strong {
   overflow: hidden;
   color: #273d5b;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 800;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -258,21 +258,21 @@
   border-radius: 8px;
   color: #78869a;
   background: #e9eef5;
-  font-size: 6px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.4px;
 }
 
 .notification-message {
   color: #566b85;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.45;
   overflow-wrap: anywhere;
 }
 
 .notification-time {
   color: #8997a8;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .notification-unread-dot {
@@ -328,13 +328,13 @@
 .notifications-empty h3 {
   margin: 12px 0 0;
   color: #263c5a;
-  font-size: 13px;
+  font-size: 17px;
 }
 
 .notifications-empty p {
   max-width: 440px;
   margin: 6px 0 0;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.6;
 }
 
@@ -343,7 +343,7 @@
   border-top: 1px solid #edf1f6;
   color: #8a97a8;
   background: #fbfcfe;
-  font-size: 8px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
@@ -359,11 +359,11 @@
   }
 
   .notifications-heading h1 {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .notifications-heading > div > p:last-child {
-    font-size: 9px;
+    font-size: 13px;
     line-height: 1.5;
   }
 
@@ -371,7 +371,7 @@
     min-height: 31px;
     gap: 5px;
     padding: 0 7px;
-    font-size: 8px;
+    font-size: 12px;
     white-space: nowrap;
   }
 
@@ -383,7 +383,7 @@
   .notifications-demo-note {
     margin-bottom: 10px;
     padding: 8px;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .notifications-panel {
@@ -402,7 +402,7 @@
   .notifications-filters button {
     min-height: 27px;
     padding: 0 8px;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .notification-item {
@@ -423,7 +423,7 @@
 
   .notification-item-topline strong,
   .notification-message {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .notification-read-toggle {

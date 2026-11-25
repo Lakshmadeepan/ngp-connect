@@ -10,7 +10,7 @@
   max-width: 680px;
   margin: 0;
   color: #142748;
-  font-size: clamp(25px, 4vw, 31px);
+  font-size: clamp(29px, 4vw, 35px);
   font-weight: 800;
   letter-spacing: -0.8px;
   line-height: 1.18;
@@ -20,7 +20,7 @@
   max-width: 570px;
   margin: 8px 0 0;
   color: #75859d;
-  font-size: 13px;
+  font-size: 17px;
   line-height: 1.6;
 }
 
@@ -66,7 +66,7 @@
 .classroom-kicker {
   margin: 0 0 5px;
   color: #3478cf;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 1.15px;
 }
@@ -74,7 +74,7 @@
 .classroom-connection-card h2 {
   margin: 0;
   color: #152b4e;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 800;
   letter-spacing: -0.35px;
   line-height: 1.35;
@@ -88,7 +88,7 @@
 
 .classroom-connect-form label {
   color: #203553;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -103,7 +103,7 @@
   color: #192d4c;
   background: #fff;
   font: inherit;
-  font-size: 13px;
+  font-size: 17px;
   transition:
     border-color 150ms ease,
     box-shadow 150ms ease;
@@ -134,7 +134,7 @@
   box-shadow: 0 6px 15px rgb(33 111 221 / 18%);
   cursor: pointer;
   font: inherit;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
   transition:
     background-color 150ms ease,
@@ -155,7 +155,7 @@
 .classroom-helper {
   margin: 1px 0 0;
   color: #7c8ba1;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.55;
   text-align: center;
 }
@@ -164,7 +164,7 @@
   min-height: 0;
   margin: 0;
   color: #8a5713;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.5;
   text-align: center;
 }
@@ -183,7 +183,7 @@
   border-radius: 10px;
   color: #365e8b;
   background: #f3f8ff;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.55;
 }
 
@@ -223,7 +223,7 @@
 .classroom-course-count {
   margin: 0 0 2px;
   color: #71819a;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -247,7 +247,7 @@
   border-radius: 11px;
   color: #236dce;
   background: #edf4ff;
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 800;
 }
 
@@ -259,7 +259,7 @@
 .classroom-course-copy h3 {
   margin: 0;
   color: #203553;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 800;
   overflow-wrap: anywhere;
 }
@@ -267,7 +267,7 @@
 .classroom-course-copy p {
   margin: 4px 0 0;
   color: #7c8ba1;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.5;
   overflow-wrap: anywhere;
 }
@@ -313,7 +313,7 @@
   background: #fff;
   cursor: pointer;
   font: inherit;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -331,7 +331,7 @@
   background: #fff;
   cursor: pointer;
   font: inherit;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -365,14 +365,14 @@
 .classroom-note strong {
   display: block;
   color: #244d7d;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
 .classroom-note p {
   margin: 4px 0 0;
   color: #67809e;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.55;
 }
 
@@ -384,13 +384,13 @@
   }
 
   .classroom-page-heading h1 {
-    font-size: clamp(23px, 6.1vw, 26px);
+    font-size: clamp(27px, 6.1vw, 30px);
     letter-spacing: -0.6px;
   }
 
   .classroom-page-heading > p:last-child {
     margin-top: 6px;
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .classroom-connection-card {
@@ -417,11 +417,11 @@
   }
 
   .classroom-kicker {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .classroom-connection-card h2 {
-    font-size: 15px;
+    font-size: 19px;
   }
 
   .classroom-connect-form {
@@ -430,25 +430,25 @@
   }
 
   .classroom-connect-form label {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .classroom-connect-form input {
     height: 43px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .classroom-continue-button {
     min-height: 44px;
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .classroom-helper {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .classroom-feedback {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .classroom-connected-tools {
@@ -462,7 +462,7 @@
   .classroom-state-message {
     gap: 7px;
     padding: 10px;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .classroom-course-card {
@@ -477,11 +477,11 @@
   }
 
   .classroom-course-copy h3 {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .classroom-course-copy p {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .classroom-note {
@@ -492,10 +492,10 @@
   }
 
   .classroom-note strong {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .classroom-note p {
-    font-size: 9px;
+    font-size: 13px;
   }
 }

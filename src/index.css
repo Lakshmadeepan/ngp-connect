@@ -55,6 +55,7 @@ body,
 body {
   background: var(--ngp-bg);
   color: var(--ngp-strong-text);
+  font-size: 20px;
 }
 
 button,
@@ -121,8 +122,8 @@ a {
   box-shadow: 0 5px 13px rgb(22 115 234 / 14%);
 }
 
-.brand-mark span {
-  font-size: 25px;
+.login-card .brand-mark span {
+  font-size: 27px;
   font-weight: 800;
   line-height: 1;
 }
@@ -137,8 +138,8 @@ a {
   background: #96c8ff;
 }
 
-.brand-name {
-  font-size: 18px;
+.login-card .brand-name {
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.7px;
@@ -149,9 +150,9 @@ a {
   color: #1273e8;
 }
 
-.brand p {
+.login-card .brand p {
   margin: 4px 0 0;
-  font-size: 12px;
+  font-size: 14px;
   color: #71819a;
 }
 
@@ -163,26 +164,26 @@ a {
   margin-top: 17px;
 }
 
-.eyebrow {
+.login-card .eyebrow {
   margin: 0 0 7px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 2.5px;
   color: #0b70e6;
 }
 
-h1 {
+.login-card h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -1.1px;
   color: #071d4d;
 }
 
-.subtitle {
+.login-card .subtitle {
   margin: 6px 0 0;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   color: #52627c;
 }
@@ -191,15 +192,15 @@ form {
   margin-top: 16px;
 }
 
-form > label {
+.login-card form > label {
   display: block;
   margin: 0 0 5px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: #071d4d;
 }
 
-form > label:not(:first-child) {
+.login-card form > label:not(:first-child) {
   margin-top: 11px;
 }
 
@@ -233,7 +234,7 @@ form > label:not(:first-child) {
   stroke-linejoin: round;
 }
 
-.input-wrap input {
+.login-card .input-wrap input {
   min-width: 0;
   flex: 1;
   height: 100%;
@@ -242,7 +243,7 @@ form > label:not(:first-child) {
   outline: 0;
   color: #071d4d;
   background: transparent;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -264,41 +265,41 @@ form > label:not(:first-child) {
   stroke: #74839b;
 }
 
-.form-meta {
+.login-card .form-meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
   margin-top: 7px;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   color: #708099;
 }
 
-.form-meta span {
+.login-card .form-meta span {
   white-space: nowrap;
 }
 
-.form-meta a,
-.signup a {
+.login-card .form-meta a,
+.login-card .signup a {
   flex: 0 0 auto;
   color: #076fe5;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
 }
 
-.primary-button,
-.google-button {
+.login-card .primary-button,
+.login-card .google-button {
   width: 100%;
   height: 48px;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
 }
 
-.primary-button {
+.login-card .primary-button {
   margin-top: 14px;
   border: 0;
   color: #fff;
@@ -306,17 +307,17 @@ form > label:not(:first-child) {
   box-shadow: 0 6px 14px rgb(22 115 232 / 15%);
 }
 
-.primary-button:active {
+.login-card .primary-button:active {
   background: #0c63cf;
 }
 
-.divider {
+.login-card .divider {
   display: flex;
   align-items: center;
   gap: 13px;
   margin: 12px 0;
   color: #64738a;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .divider span {
@@ -325,7 +326,7 @@ form > label:not(:first-child) {
   background: #d3e0ef;
 }
 
-.google-button {
+.login-card .google-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,15 +336,15 @@ form > label:not(:first-child) {
   background: #fff;
 }
 
-.google-button svg {
+.login-card .google-button svg {
   width: 21px;
   height: 21px;
 }
 
-.signup {
+.login-card .signup {
   margin: 17px 0 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   color: #65758d;
 }

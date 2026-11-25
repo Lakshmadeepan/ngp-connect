@@ -19,7 +19,7 @@
 .shared-resources-heading h1 {
   margin: 0;
   color: #10264c;
-  font-size: clamp(24px, 2.5vw, 30px);
+  font-size: clamp(28px, 2.5vw, 34px);
   letter-spacing: -0.8px;
 }
 
@@ -27,7 +27,7 @@
 .shared-section-heading p {
   margin: 7px 0 0;
   color: #78879c;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.55;
 }
 
@@ -47,7 +47,7 @@
   box-shadow: 0 5px 13px rgb(33 111 221 / 15%);
   cursor: pointer;
   font: inherit;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -77,7 +77,7 @@
 .shared-resource-notice p,
 .shared-session-notice {
   margin: 0;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.55;
 }
 
@@ -110,14 +110,14 @@
 .shared-section-heading h2 {
   margin: 0;
   color: #1a2c49;
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 750;
 }
 
 .shared-upload-panel-heading p {
   margin: 5px 0 0;
   color: #8290a5;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -133,7 +133,7 @@
   display: grid;
   gap: 6px;
   color: #344861;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -153,7 +153,7 @@
   color: #263b59;
   background: #fff;
   font: inherit;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .shared-upload-form input:focus,
@@ -174,7 +174,7 @@
 
 .shared-file-field small {
   color: #8290a5;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -182,7 +182,7 @@
   grid-column: 1 / -1;
   margin: 0;
   color: #b53c49;
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .shared-upload-submit {
@@ -202,7 +202,7 @@
   background: transparent;
   cursor: pointer;
   font: inherit;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -258,14 +258,14 @@
 
 .shared-category-name {
   color: #233552;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 1.4;
 }
 
 .shared-category-count {
   color: #8794a8;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .shared-recent-heading {
@@ -293,7 +293,7 @@
   color: #263b59;
   background: transparent;
   font: inherit;
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .shared-resource-search input::placeholder {
@@ -343,7 +343,7 @@
   overflow-wrap: anywhere;
   margin: 0;
   color: #233552;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 750;
 }
 
@@ -353,14 +353,14 @@
   border-radius: 5px;
   color: #2167bd;
   background: #edf4ff;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 800;
 }
 
 .shared-resource-category {
   margin: 5px 0 9px;
   color: #8290a5;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .shared-resource-metadata {
@@ -374,7 +374,7 @@
   display: flex;
   gap: 4px;
   color: #77869b;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.45;
 }
 
@@ -406,7 +406,7 @@
   border-radius: 7px;
   color: #2167bd;
   background: #fff;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none;
 }
@@ -433,14 +433,14 @@
 .shared-empty-state h3 {
   margin: 13px 0 0;
   color: #263b59;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .shared-empty-state p {
   max-width: 440px;
   margin: 6px 0 0;
   color: #8290a5;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
